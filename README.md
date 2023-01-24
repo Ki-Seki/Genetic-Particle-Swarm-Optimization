@@ -1,18 +1,16 @@
-# 声明
+# 遗传-粒子群优化算法
 
-这些代码是陈克明(2018)[1]中第四章算法的重现。注意并非源代码，仅是按照论文中思路的代码重现。
+该遗传-粒子群优化算法（Genetic-Particle Swarm Optimization Algorithm, GPSO Algorithm）的代码是陈克明(2018)[^1]中第四章算法的复现。
 
-作者：宋世超
+注：这个仓库原来在另外一个更大的仓库当中，因为整理的需要，遂把这个项目单列了出来。代码是 2021 年末写的。
 
-邮箱：Ki_Seki@outlook.com
-
-# 使用方法
+## 使用方法
 
 1. 在 http://comopt.ifi.uni-heidelberg.de/software/TSPLIB95/tsp/ 下载合适的数据集
 2. 修改 main.m 开始的参数部分
 3. 运行 main.m 即可
 
-# 文件结构
+## 文件结构
 
 * main.m 是主文件，运行其会调用 TSP 数据和函数文件
 * 以 .tsp 结尾的文件是数据集，来源：http://comopt.ifi.uni-heidelberg.de/software/TSPLIB95/tsp/
@@ -22,7 +20,7 @@
 * mutation() 用于进行论文中说的变异操作
 * drawPath()  用于绘制一条 TSP 回路
 
-# 实验重现
+## 实验重现
 
 在 4.5 仿真实验中，结果是有误的。
 
@@ -40,6 +38,6 @@
 
 对于文件夹中的另外两个数据集，st70 和 ch150，容易验证也有相似的问题。
 
-# 参考文献
+## 参考文献
 
-[1]陈克明. 动态多智能算法及其在物流配送系统中的应用研究[D/OL]. 东华大学, 2018.https://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CDFD&dbname=CDFDLAST2019&filename=1018995735.nh&v=.
+[^1]: 陈克明. 动态多智能算法及其在物流配送系统中的应用研究[D/OL]. 东华大学, 2018.https://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CDFD&dbname=CDFDLAST2019&filename=1018995735.nh&v=.
